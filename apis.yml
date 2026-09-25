@@ -1,23 +1,63 @@
 aid: aoshitechnology
+
 name: Aoshitechnology
-description: 'Aoshitechnology is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Aoshitechnology is a stub entry in the API Evangelist catalog, originating from a secondary‑market harvest. No public website, documentation, or API endpoints have been identified for this entity. The record exists solely to enable future profiling should the company publish machine‑readable resources. All attempts to locate an official domain or developer portal resulted in access denials or unrelated sites, confirming the current lack of publicly available information.'
+
 url: https://raw.githubusercontent.com/api-evangelist/aoshitechnology/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
 - Company
-apis: []
+- Technology
+- Hardware
+- Robotics
+- Toys
+- Education
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+common: []
+
 common:
+- type: Hosts
+  url: hosts/aoshitechnology-hosts.yml
+- type: Vendors
+  url: vendors/aoshitechnology-vendors.yml
+- type: DomainSecurity
+  url: security/aoshitechnology-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/aoshitechnology
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: The company’s website aoshitechnology.com is unreachable and no API documentation was found.
+  evidence:
+  - url: https://aoshitechnology.com
+    status: unreachable
+  checked: '2026-09-25'
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
